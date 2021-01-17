@@ -1,0 +1,59 @@
+.App {
+  display: flex;
+  text-align: center;
+}
+
+.App-nav {
+  width: 30%;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Main-content {
+  width: 70%;
+}
+
+.Navbar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.notClicked {
+  border-radius: 5px;
+  border: 5px solid transparent;
+  width: 100px;
+  height: 50px;
+}
+
+.notClicked:hover{
+  animation: fade 0.5s ease-in;
+  border: 5px solid tomato;
+
+}
+
+@keyframes fade {
+  from {
+    border: 5px solid transparent; 
+  } to {
+    border: 5px solid tomato;
+  }
+}
+
+.clicked {
+  border-radius: 5px;
+  background-color: red;
+  border: 2px solid transparent;
+  width: 100px;
+  height: 50px;
+}
+
+.View {
+  background-color: royalblue;
+}
